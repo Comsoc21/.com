@@ -281,10 +281,14 @@ header #menu-bar{
 
 .popular .box-container{
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 50px;
+  margin-top: 80px;
+}
+
+.popular .box-container #pres{
+  position: relative;
+  top: -30px;
 }
 
 .popular .box-container .box{
@@ -321,6 +325,18 @@ header #menu-bar{
 .popular .box-container .box:hover{
   transform: scale(1.05,1.05);
   transition: 0.4s;
+}
+
+.popular .spe{
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  padding-top: 50px;
+}
+
+.popular .spe span{
+  color:#3f5efb;
+  font-size: 20px;
 }
 
 input{
@@ -517,6 +533,18 @@ textarea{
   .home::before{
     top: 42rem;
   }
+
+  .popular .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 80px;
+  }
+
+  .popular .box-container #pres{
+    top:0px;
+  }
 }
 
 @media (max-width:991px){
@@ -533,6 +561,18 @@ textarea{
 
   .home::before{
     top: 35rem;
+  }
+  
+  .popular .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 80px;
+  }
+
+  .popular .box-container #pres{
+    top:0px;
   }
 }
 
@@ -592,6 +632,18 @@ textarea{
   .home .content h3{
     font-size: 4.5rem;
   }
+
+  .popular .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 80px;
+  }
+
+  .popular .box-container #pres{
+    top:0px;
+  }
 }
 
 @media (max-width:500px){
@@ -613,5 +665,17 @@ textarea{
 
   .order .row .image{
     display: none;
+  }
+
+  .popular .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 80px;
+  }
+
+  .popular .box-container #pres{
+    top:0px;
   }
 }
