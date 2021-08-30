@@ -33,6 +33,30 @@ body{
   /*height: 200rem;*/
 }
 
+.top{
+  width: 70px;
+  height: 70px;
+  background-color: rgb(187, 182, 182, 0.7);
+  border-radius: 50%;
+  position: fixed;
+  left: 92%;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  overflow: hidden;
+  z-index: 1;
+  bottom: 0;
+}
+
+.top .fa{
+  display: flex;
+  line-height: 70px;
+  justify-content: center;
+  font-size: 2rem;
+}
+.top a{
+  text-decoration: none;
+}
+
 html::-webkit-scrollbar{
   width: 1.4rem;
 }
@@ -699,11 +723,19 @@ header #menu-bar{
     padding-left: 10%;
     padding-right: 10%;
   }
+
+  .top{
+    left: 85%;
+  }
 }
 
 @media (max-width:500px){
   html{
     font-size: 50%;
+  }
+  
+  .top{
+    left:70%;
   }
 
   .home::before, .home::after{
