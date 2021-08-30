@@ -310,7 +310,7 @@ header #menu-bar{
 .popular .box-container .box h3{
   color: white;
   font-size: 3rem;
-  font-weight: normal;
+  font-weight: bolder;
   padding: 5px;
   font-family: 'Titillium Web', sans-serif ;
 }
