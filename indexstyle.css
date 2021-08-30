@@ -281,15 +281,13 @@ header #menu-bar{
 
 .popular .box-container{
   display: flex;
+  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 80px;
 }
 
-.popular .box-container #pres{
-  position: relative;
-  top: -30px;
-}
+
 
 .popular .box-container .box{
   background: black;
@@ -541,10 +539,6 @@ textarea{
     flex-wrap: wrap;
     margin-top: 80px;
   }
-
-  .popular .box-container #pres{
-    top:0px;
-  }
 }
 
 @media (max-width:991px){
@@ -569,10 +563,6 @@ textarea{
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 80px;
-  }
-
-  .popular .box-container #pres{
-    top:0px;
   }
 }
 
@@ -641,9 +631,6 @@ textarea{
     margin-top: 80px;
   }
 
-  .popular .box-container #pres{
-    top:0px;
-  }
 }
 
 @media (max-width:500px){
@@ -673,9 +660,5 @@ textarea{
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 80px;
-  }
-
-  .popular .box-container #pres{
-    top:0px;
   }
 }
