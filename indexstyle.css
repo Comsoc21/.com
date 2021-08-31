@@ -102,21 +102,6 @@ header .logo img{
   height: 8rem;
 }
 
-header .log{
-  height: 50px;
-  line-height: 50px;
-  width: 200px;
-  text-align: center;
-}
-
-header .log a{
-  text-decoration: none;
-  font-family: 'Big Shoulders Text', cursive;
-  font-size: 50px;
-  -webkit-text-stroke: 3px rgba(254,97,106,1);
-  -webkit-text-fill-color: transparent;
-}
-
 header .narbar ul{
   display: flex;
   align-items: center;
@@ -224,7 +209,7 @@ header #menu-bar{
 .about .image{
   flex:1 1 40rem;
   height: 50rem;
-  background: url('https://i.postimg.cc/kG4tyRWS/about-frame-img.png'), url('https://i.postimg.cc/vHssKX10/about.png') no-repeat;
+  background: url('https://i.postimg.cc/kG4tyRWS/about-frame-img.png'), url('https://i.postimg.cc/CdyvWNwL/R-I.gif') no-repeat;
   background-position: center;
   background-size: cover;
   background-blend-mode: screen;

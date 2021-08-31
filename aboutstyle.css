@@ -276,20 +276,11 @@ header #menu-bar{
 
 .about .image{
   flex:0 1 40rem;
-  height: 53rem;
+  height: 50rem;
   background: url('https://i.postimg.cc/kG4tyRWS/about-frame-img.png'), url('https://i.postimg.cc/vHssKX10/about.png') no-repeat;
   background-position: center;
   background-size: cover;
   background-blend-mode: screen;
-}
-
-.about .image2{
-    flex:0 1 40rem;
-    height: 45rem;
-    background: url('https://i.postimg.cc/kG4tyRWS/about-frame-img.png'), url('https://i.postimg.cc/Jh2pfXJz/20171126064158-1.jpg') no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-blend-mode: screen;
 }
 
 .about .content{
@@ -320,19 +311,10 @@ header #menu-bar{
   padding-bottom: 100px;
 }
 
-.about2 .image{
-  flex:0 1 40rem;
-  height: 53rem;
-  background: url('https://i.postimg.cc/kG4tyRWS/about-frame-img.png'), url('https://i.postimg.cc/vHssKX10/about.png') no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-blend-mode: screen;
-}
-
 .about2 .image2{
     flex:0 1 40rem;
     height: 45rem;
-    background: url('https://i.postimg.cc/kG4tyRWS/about-frame-img.png'), url('https://i.postimg.cc/Jh2pfXJz/20171126064158-1.jpg') no-repeat;
+    background: url('https://i.postimg.cc/kG4tyRWS/about-frame-img.png'), url('https://i.postimg.cc/g2NmVXYB/20171126064158-1.jpg') no-repeat;
     background-position: center;
     background-size: cover;
     background-blend-mode: screen;
