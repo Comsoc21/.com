@@ -299,6 +299,36 @@ header #menu-bar{
   background: linear-gradient(to right, #c33764, #1d2671);
 }
 
+.popular .box-container .box2{
+  background: black;
+  width: 30rem;
+  margin: 20px;
+  border-radius: 1rem;
+  box-shadow: 0 .3rem .5rem rgba(255,255,255,.2);
+  text-align: center;
+  background: linear-gradient(to right, #4568dc, #b06ab3);
+}
+
+.popular .box-container .box2 h3{
+  color: white;
+  font-size: 3rem;
+  font-weight: bolder;
+  padding: 5px;
+  font-family: 'Titillium Web', sans-serif ;
+}
+
+.popular .box-container .box2 p{
+  color: gold;
+  font-size: 1.5rem;
+  padding: 5px;
+}
+
+
+.popular .box-container .box2:hover{
+  transform: scale(1.05,1.05);
+  transition: 0.4s;
+}
+
 .popular .box-container .box img{
   height: 25rem;
   width: 100%;
@@ -325,17 +355,6 @@ header #menu-bar{
   transition: 0.4s;
 }
 
-.popular .spe{
-  color: white;
-  text-align: center;
-  font-size: 15px;
-  padding-top: 50px;
-}
-
-.popular .spe span{
-  color:#3f5efb;
-  font-size: 20px;
-}
 
 input{
   border-radius: 1rem;
