@@ -46,14 +46,14 @@ html{
   height: 50px;
   position: relative;
   border: 6px solid #fdbb2d;
-  animation: loader 2s infinite ease;
+  animation: loader 1.25s infinite ease;
 }
 .loader-inner {
   vertical-align: top;
   display: inline-block;
   width: 100%;
   background-color: #fff;
-  animation: loader-inner 2s infinite ease-in;
+  animation: loader-inner 1.25s infinite ease-in;
 }
 @keyframes loader {
   0% { transform: rotate(0deg);}
