@@ -35,7 +35,7 @@ html{
   z-index: 100;
   top: 0;
   left: 0;
-  background:#4568dc;
+  background: linear-gradient(to right, #fc4a1a, #f7b733);
   display:flex;
   justify-content: center;
   align-items: center;
@@ -45,7 +45,7 @@ html{
   width: 50px;
   height: 50px;
   position: relative;
-  border: 6px solid #fdbb2d;
+  border: 6px solid skyblue;
   animation: loader 1.25s infinite ease;
 }
 .loader-inner {

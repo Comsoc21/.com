@@ -35,7 +35,7 @@ html{
   z-index: 100;
   top: 0;
   left: 0;
-  background:#4568dc;
+  background: linear-gradient(to left, #fc466b, #3f5efb);
   display:flex;
   justify-content: center;
   align-items: center;
