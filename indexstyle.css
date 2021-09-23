@@ -127,6 +127,44 @@ section{
   transition: 0.4s;
 }
 
+.bn632-hover {
+  width: 200px;
+  font-size: 1.7rem;
+  padding: .7rem 4rem;
+  border-radius: 5rem;
+  margin-top: 1rem;
+  color: #fff;
+  cursor: pointer;
+  height: 50px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  border: 2px solid black;
+}
+
+.bn632-hover:hover {
+  background-position: 100% 0;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  transform: scale(1.1);
+}
+
+.bn632-hover:focus {
+  outline: none;
+}
+
+.bn632-hover {
+    background-image: linear-gradient(to right, #12c2e9, #c471ed, #f64f59, #fc466b, #3f5efb);
+    box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+  }
+
 header{
   position: fixed;
   top: 0;
