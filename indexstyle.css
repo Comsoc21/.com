@@ -715,6 +715,10 @@ textarea{
     flex-wrap: wrap;
     margin-top: 80px;
   }
+  
+  .bn632-hover{
+    font-size: 2rem;
+  }
 
 }
 

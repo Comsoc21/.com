@@ -302,6 +302,8 @@ header #menu-bar{
   color: white;
   text-align: center;
   padding-bottom: 10px;
+  padding-left:0;
+  padding-right:0;
 }
 
 .heading1 span{
@@ -323,6 +325,8 @@ header #menu-bar{
   color: white;
   padding-top: 50px;
   padding-bottom: 10px;
+  padding-left:0;
+  padding-right:0;
 }
 
 .heading3 span{
