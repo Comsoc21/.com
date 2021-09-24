@@ -738,9 +738,6 @@ header #menu-bar{
     padding-left: 10%;
     padding-right: 10%;
   }
-  
-  section1 p{
-    font-size: 15px;
 }
 
 @media (max-width:991px){
