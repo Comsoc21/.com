@@ -26,6 +26,7 @@ html{
   font-size: 62.5%;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  cursor: default;
 }
 
 .loader-wrapper {
@@ -163,7 +164,51 @@ section{
 .bn632-hover {
     background-image: linear-gradient(to right, #12c2e9, #c471ed, #f64f59, #fc466b, #3f5efb);
     box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
-  }
+}
+
+.bn639-hover {
+  width: 200px;
+  font-size: 1.7rem;
+  padding: .7rem 4rem;
+  border-radius: 5rem;
+  margin-top: 1rem;
+  color: #fff;
+  cursor: pointer;
+  height: 50px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  border: 2px solid black;
+}
+
+.bn639-hover:hover {
+  background-position: 100% 0;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  transform: scale(1.1);
+}
+
+.bn639-hover:focus {
+  outline: none;
+}
+
+.bn639-hover.bn20 {
+    background-image: linear-gradient(
+      to right,
+      #667eea,
+      #764ba2,
+      #6b8dd6,
+      #8e37d7
+    );
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
 
 header{
   position: fixed;
@@ -183,6 +228,56 @@ header .logo img{
   height: 8rem;
 }
 
+header .narbar * {
+  box-sizing: border-box;
+  transition: all .35s ease;
+}
+
+header .narbar li {
+  display: inline-block;
+  list-style: outside none none;
+}
+
+header .narbar a::before,
+header .narbar a::after {
+  content: '';
+  height: 18px;
+  width: 25px;
+  position: absolute;
+  transition: all .4s ease;
+  opacity: 0;
+}
+
+header .narbar a::before {
+  content: '';
+  right: 0;
+  top: 0;
+  border-top: 3px solid #fc466b;
+  border-right: 3px solid #3f5efb;
+  transform: translate(-100%, 50%);
+}
+
+header .narbar a:after {
+  content: '';
+  left: 0;
+  bottom: 0;
+  border-bottom: 3px solid #3f5efb;
+  border-left: 3px solid #fc466b;
+  transform: translate(100%, -50%)
+}
+
+header .narbar a:hover:before,
+header .narbar a:hover:after{
+  transform: translate(0,0);
+  opacity: 1;
+}
+
+header .narbar a:hover {
+  background: -webkit-linear-gradient(#fc466b, #3f5efb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 header .narbar ul{
   display: flex;
   align-items: center;
@@ -197,15 +292,16 @@ header .narbar ul li{
 header .narbar ul li a{
   font-size: 2rem;
   color: white;
+  position: relative;
+  padding: .5em .8em;
+  font-weight: bolder;
 }
 
-header .narbar ul li a.active, header .narbar ul li a:hover{
-  color: orange;
-}
+
 
 header #menu-bar{
   font-size: 3.5rem;
-  color: white;
+  color: aqua;
   cursor: pointer;
   display: none;
 }
@@ -262,11 +358,24 @@ header #menu-bar{
 
 .home .content{
   flex:1 1 39rem;
+  margin: 15px;
 }
 
 .home .content h3{
   color: white;
   font-size: 5.2rem;
+}
+
+.home .content ul{
+  list-style:none;
+}
+
+.home ,.content ul li{
+  margin-top: 20px;
+}
+
+.home .content ul li a{
+  font-weight: bolder;
 }
 
 .home .content p{
@@ -523,7 +632,7 @@ textarea{
 
 .footer .box-container .box h3{
   font-size: 20px;
-  color:lightgreen;
+  color:#3f5efb;
   padding: 10px 0;
   font-weight: normal;
 }
@@ -548,16 +657,16 @@ textarea{
 
 .footer .box-container .box a i{
   padding-right: 1rem;
-  color: var(--orange);
+  color: limegreen;
 }
 
 .footer .box-container .box p i{
   padding-right: 10px;
-  color: var(--orange);
+  color: limegreen;
 }
 
 .footer .credit{
-  font-size: 18px;
+  font-size: 15px;
   text-align: center;
   border-top: .2rem solid rgba(255, 255, 255, 0.7);
   padding: 20px 10px;
@@ -568,7 +677,7 @@ textarea{
 }
 
 .footer .credit span{
-  color: var(--orange);
+  color:#3f5efb;
 }
 
 .box h1{
@@ -686,10 +795,7 @@ textarea{
     border-left: .2rem solid white;
     font-size: 2.3rem;
   }
-  header .narbar ul li a:hover,header .narbar ul li a.active{
-    color: orange;
-    border-color: orange;
-  }
+
 
   .fa-times{
     transform: rotate(180deg);

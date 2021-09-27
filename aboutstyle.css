@@ -26,6 +26,7 @@ html{
   font-size: 62.5%;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  cursor: default;
 }
 
 .loader-wrapper {
@@ -89,7 +90,6 @@ html::-webkit-scrollbar-thumb{
 section{
   min-height: 100vh;
   padding: 1rem 10%;
-  padding-top:10.5rem;
 }
 
 .btn{
@@ -199,6 +199,56 @@ header .log a{
   -webkit-text-fill-color: transparent;
 }
 
+header .narbar * {
+  box-sizing: border-box;
+  transition: all .35s ease;
+}
+
+header .narbar li {
+  display: inline-block;
+  list-style: outside none none;
+}
+
+header .narbar a::before,
+header .narbar a::after {
+  content: '';
+  height: 18px;
+  width: 25px;
+  position: absolute;
+  transition: all .4s ease;
+  opacity: 0;
+}
+
+header .narbar a::before {
+  content: '';
+  right: 0;
+  top: 0;
+  border-top: 3px solid #f12711;
+  border-right: 3px solid #f5af19;
+  transform: translate(-100%, 50%);
+}
+
+header .narbar a:after {
+  content: '';
+  left: 0;
+  bottom: 0;
+  border-bottom: 3px solid #f5af19;
+  border-left: 3px solid #f12711;
+  transform: translate(100%, -50%)
+}
+
+header .narbar a:hover:before,
+header .narbar a:hover:after{
+  transform: translate(0,0);
+  opacity: 1;
+}
+
+header .narbar a:hover {
+  background: -webkit-linear-gradient(#f12711, #f5af19);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 header .narbar ul{
   display: flex;
   align-items: center;
@@ -213,15 +263,16 @@ header .narbar ul li{
 header .narbar ul li a{
   font-size: 2rem;
   color: white;
+  position: relative;
+  padding: .5em .8em;
+  font-weight: bolder;
 }
 
-header .narbar ul li a.active, header .narbar ul li a:hover{
-  color: orange;
-}
+
 
 header #menu-bar{
   font-size: 3.5rem;
-  color: white;
+  color: aqua;
   cursor: pointer;
   display: none;
 }
@@ -355,7 +406,7 @@ header #menu-bar{
 
 .about2 .image2{
     flex:0 1 40rem;
-    height: 45rem;
+    height: 32rem;
     background: url('https://i.postimg.cc/kG4tyRWS/about-frame-img.png'), url('https://i.postimg.cc/g2NmVXYB/20171126064158-1.jpg') no-repeat;
     background-position: center;
     background-size: cover;
@@ -378,71 +429,6 @@ header #menu-bar{
   padding: 1rem 0%;
 }
 
-
-.footer{
-  background: #282727;
-  padding: 1rem 7%;
-}
-
-.footer .box-container{
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.footer .box-container .box{
-  flex: 1 1 25rem;
-  margin: 2rem;
-}
-
-.footer .box-container .box h3{
-  font-size: 2.5rem;
-  color: #fff;
-  padding: 1rem 0;
-  font-weight: normal;
-}
-
-.footer .box-container .box p{
-  font-size: 1.7rem;
-  color: #eee;
-  padding: 1rem 0;
-}
-
-.footer .box-container .box a{
-  font-size: 1.7rem;
-  color: #eee;
-  padding: 1rem 0;
-  display: block;
-}
-
-.footer .box-container .box a:hover{
-  color: var(--orange);
-}
-
-.footer .box-container .box a i{
-  padding-right: 1rem;
-  color: var(--orange);
-}
-
-.footer .box-container .box p i{
-  padding-right: 1rem;
-  color: var(--orange);
-}
-
-.footer .credit{
-  font-size: 2rem;
-  text-align: center;
-  border-top: .2rem solid rgba(255, 255, 255, 0.7);
-  padding: 2rem 1rem;
-  font-weight: normal;
-  letter-spacing: .1rem;
-  width: 100%;
-  color: white;
-}
-
-.footer .credit span{
-  color: var(--orange);
-}
-
 .footer{
   background: #151a2c;
   padding: 10px 7%;
@@ -463,7 +449,7 @@ header #menu-bar{
 
 .footer .box-container .box h3{
   font-size: 20px;
-  color:lightgreen;
+  color:var(--orange);
   padding: 10px 0;
   font-weight: normal;
 }
@@ -483,17 +469,17 @@ header #menu-bar{
 }
 
 .footer .box-container .box a:hover{
-  color: var(--orange);
+  color:var(--orange);
 }
 
 .footer .box-container .box a i{
   padding-right: 1rem;
-  color: var(--orange);
+  color: blueviolet;
 }
 
 .footer .box-container .box p i{
   padding-right: 10px;
-  color: var(--orange);
+  color:blueviolet;
 }
 
 .footer .credit{
@@ -508,7 +494,7 @@ header #menu-bar{
 }
 
 .footer .credit span{
-  color: var(--orange);
+  color:var(--orange) ;
 }
 
 .box h1{
@@ -609,10 +595,6 @@ header #menu-bar{
     padding-left: 2rem;
     border-left: .2rem solid white;
     font-size: 2.3rem;
-  }
-  header .narbar ul li a:hover,header .narbar ul li a.active{
-    color: orange;
-    border-color: orange;
   }
 
   .fa-times{

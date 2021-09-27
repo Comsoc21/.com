@@ -1,12 +1,12 @@
 $(document).ready(function () {
     $('#menu-bar').click(function () {
-        $(this).toggleClass('fa fa-times');
+        $(this).toggleClass('fad fa-times');
         $('.narbar').toggleClass('nav-toggle');
     });
 
     $('window').on('scroll load', function () {
         
-        $('#menu-bar').removeClass('fa fa-times');
+        $('#menu-bar').removeClass('fad fa-times');
         $('.narbar').removeClass('nav-toggle');
 
 
