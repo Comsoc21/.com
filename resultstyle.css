@@ -691,6 +691,18 @@ header #menu-bar{
   text-align: center;
 }
 
+.popular .box-container #st{
+  background: linear-gradient(to right, #FCC201, #EEB609, #DBA514, #C69320);
+}
+
+.popular .box-container #nd{
+  background: linear-gradient(to right, #B2AFAF, #969393, #5D5C5C);
+}
+
+.popular .box-container #rd{
+  background: linear-gradient(to right, #B56E26, #9E5D1C, #864B11);
+}
+
 .popular .box-container .box img{
   height: 25rem;
   width: 100%;
@@ -704,10 +716,11 @@ header #menu-bar{
   font-weight: normal;
   padding: 5px;
   font-family: 'Titillium Web', sans-serif ;
+  font-weight: bold;
 }
 
 .popular .box-container .box h4{
-  color:paleturquoise;
+  color:white;
   font-size: 1.5rem;
   font-weight: normal;
   padding: 5px;
@@ -715,7 +728,7 @@ header #menu-bar{
 }
 
 .popular .box-container .box p{
-  color: gold;
+  color:red;
   font-size: 2rem;
   padding: 2px;
 }
